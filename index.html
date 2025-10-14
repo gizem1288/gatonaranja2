@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gato Naranja">
+    <title>El Gato Naranja - Un compañero adorable</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="preconnect" href="https://images.unsplash.com">
+    
+    <style>
+        /* Mínimo CSS para mejorar contraste y accesibilidad */
+        .btn-warning.text-white, .bg-warning.text-white {
+            color: #000 !important;
+        }
+        .navbar-dark.bg-warning .navbar-brand,
+        .navbar-dark.bg-warning .nav-link {
+            color: rgba(0,0,0,0.9) !important;
+        }
+        .navbar-dark.bg-warning .nav-link.active {
+            color: #000 !important;
+            font-weight: bold;
+        }
+        footer a:hover {
+            color: #ffc107 !important;
+        }
+    </style>
+   
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-warning sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Gato Naranja</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#fotos">Fotos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#características">Características</a></li>
+          <li class="nav-item"><a class="nav-link" href="#donacion">Donaciones</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h1 class="display-4 fw-bold text-warning">El Gato Naranja</h1>
+          <p class="lead">
+            Un compañero adorable y lleno de personalidad. Los gatos naranjas son conocidos por su carácter amigable y juguetón, siendo excelentes mascotas para familias.
+          </p>
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#donacionAvisoModal">
+            Donaciones
+          </button>
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="https://images.unsplash.com/photo-1648555221767-b194d5b0c465?auto=format&fit=crop&q=60&w=600"
+               class="rounded-circle img-fluid" alt="Gato Naranja">
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="modal fade" id="donacionAvisoModal" tabindex="-1" aria-labelledby="donacionAvisoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-warning">
+        <div class="modal-header bg-warning text-white">
+          <h5 class="modal-title" id="donacionAvisoModalLabel">Donaciones</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body text-center">
+          <p class="fs-5 mb-3">Ya puedes hacer tu donación</p>
+        </div>
+        <div class="modal-footer d-flex justify-content-between">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button id="btnDonar" type="button" class="btn btn-warning text-white fw-bold">Donar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 mb-6 mb-3">
+                    <div class="card h-100 border-1 bg-transparent">
+                        <div class="card-body text-center">
+                            <h3 class="card-title text-warning">Alimentación</h3>
+                            <p class="card-text">Los gatos naranjas se alimentan principalmente de comida para gatos de alta calidad, rica en proteínas. Necesitan una dieta balanceada para mantener su energía y pelaje saludable.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-6 mb-3">
+                    <div class="card h-100 border-1 bg-transparent">
+                        <div class="card-body text-center">
+                            <h3 class="card-title text-warning">Hábitat</h3>
+                            <p class="card-text">Habitan en hogares alrededor del mundo, adaptándose perfectamente a la vida doméstica. Prefieren lugares cómodos, cálidos y con acceso a ventanas para observar el exterior.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-6 mb-3">
+                    <div class="card h-100 border-1 bg-transparent">
+                        <div class="card-body text-center">
+                            <h3 class="card-title text-warning">Conservación</h3>
+                            <p class="card-text">No están en peligro de extinción, pero es importante promover la adopción responsable y la esterilización para controlar la población de gatos callejeros.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-6 mb-3">
+                    <div class="card h-100 border-1 bg-transparent">
+                        <div class="card-body text-center">
+                            <h3 class="card-title text-warning">Lorem ipsum</h3>
+                            <p class="card-text">Lorem ipsum Lorem ipsum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="w-50 m-auto">
+        <div class="container">
+            <h2 class="text-center mb-4" id="fotos">Fotos de Gatos Naranjas</h2>
+            <div id="gatoCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://images.unsplash.com/photo-1605639377844-fbb7a16d222d?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDd8fGdhdG8lMjBuYXJhbmphfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600" class="d-block w-100" alt="Gato naranja 1">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                            <h5>Naranjito</h5>
+                            <p>El más juguetón de la camada</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1618230305526-48435ece521f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTJ8fGdhdG8lMjBuYXJhbmphfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600" class="d-block w-100" alt="Gato naranja 2">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                            <h5>Canela</h5>
+                            <p>Siempre curioso y explorador</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1636855595816-06ba21d08801?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTF8fGdhdG8lMjBuYXJhbmphfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600" class="d-block w-100" alt="Gato naranja 3">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                            <h5>Marmolado</h5>
+                            <p>El rey de las siestas</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#gatoCarousel" data-bs-slide="prev" aria-label="previous">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#gatoCarousel" data-bs-slide="next" aria-label="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4" id="características">Características del Gato Naranja</h2>
+            
+            <div class="accordion" id="caracteristicasAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#caracteristica1">
+                            Personalidad Amigable
+                        </button>
+                    </h2>
+                    <div id="caracteristica1" class="accordion-collapse collapse" data-bs-parent="#caracteristicasAccordion">
+                        <div class="accordion-body">
+                            <div class="row align-items-center">
+                                <div class="col-md-8">
+                                    Los gatos naranjas son conocidos por su carácter sociable y afectuoso. Suelen ser más extrovertidos que gatos de otros colores.
+                                </div>
+                                <div class="col-md-4 text-center">
+                                    <img src="https://images.unsplash.com/photo-1705285800490-4a6cbb15b094?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTI3fHxnYXRvJTIwbmFyYW5qYXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=600" 
+                                         alt="Gato naranja amigable" class="img-fluid rounded shadow">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#caracteristica2">
+                            Mayoría Machos
+                        </button>
+                    </h2>
+                    <div id="caracteristica2" class="accordion-collapse collapse" data-bs-parent="#caracteristicasAccordion">
+                        <div class="accordion-body">
+                            <div class="row align-items-center">
+                                <div class="col-md-8">
+                                    Aproximadamente el 80% de los gatos naranjas son machos debido a la genética del color naranja en los felinos.
+                                </div>
+                                <div class="col-md-4 text-center">
+                                    <img src="https://images.unsplash.com/photo-1618320637017-ffa9106565a4?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTM1fHxnYXRvJTIwbmFyYW5qYXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=600" 
+                                         alt="Gato naranja macho" 
+                                         class="img-fluid rounded shadow">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#caracteristica3">
+                            Patrón Atigrado
+                        </button>
+                    </h2>
+                    <div id="caracteristica3" class="accordion-collapse collapse" data-bs-parent="#caracteristicasAccordion">
+                        <div class="accordion-body">
+                            <div class="row align-items-center">
+                                <div class="col-md-8">
+                                    La mayoría de los gatos naranjas tienen el patrón de pelaje atigrado, con rayas distintivas que los hacen únicos.
+                                </div>
+                                <div class="col-md-4 text-center">
+                                    <img src="https://images.unsplash.com/photo-1716618092383-605ae038c0b2?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTcyfHxnYXRvJTIwbmFyYW5qYXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=600" 
+                                         alt="Gato naranja atigrado" class="img-fluid rounded shadow">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#caracteristica4">
+                            Energía y Juguetón
+                        </button>
+                    </h2>
+                    <div id="caracteristica4" class="accordion-collapse collapse" data-bs-parent="#caracteristicasAccordion">
+                        <div class="accordion-body">
+                            <div class="row align-items-center">
+                                <div class="col-md-8">
+                                    Son gatos muy energéticos que disfrutan del juego y la interacción con sus dueños, manteniendo su espíritu juguetón incluso en edad adulta.
+                                </div>
+                                <div class="col-md-4 text-center">
+                                    <img src="https://images.unsplash.com/photo-1636229299641-996d9f421e3e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjQwfHxnYXRvJTIwbmFyYW5qYXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=600" 
+                                         alt="Gato naranja juguetón" class="img-fluid rounded shadow">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#caracteristica5">
+                            Adaptabilidad
+                        </button>
+                    </h2>
+                    <div id="caracteristica5" class="accordion-collapse collapse" data-bs-parent="#caracteristicasAccordion">
+                        <div class="accordion-body">
+                            <div class="row align-items-center">
+                                <div class="col-md-8">
+                                    Se adaptan fácilmente a diferentes entornos y situaciones, lo que los convierte en excelentes mascotas para diversos tipos de hogares.
+                                </div>
+                                <div class="col-md-4 text-center">
+                                    <img src="https://images.unsplash.com/photo-1705437555945-098cac70af93?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjY2fHxnYXRvJTIwbmFyYW5qYXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=600" 
+                                         alt="Gato naranja adaptable" class="img-fluid rounded shadow">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <section id="donacion" class="py-5 bg-light">
+  <div class="container">
+    <div class="card border-warning mx-auto" style="max-width: 700px;">
+      <div class="card-header bg-warning text-white text-center">
+        <h4 class="mb-0">Salva un Gato Naranja</h4>
+      </div>
+      <div class="card-body">
+        <p class="text-center mb-4">
+          Tu contribución ayuda a proteger al gato naranja y su bienestar.
+        </p>
+
+        <form action="https://formspree.io/f/mwpndgdz" method="post" class="contactform">
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" id="nombre" name="nombre" class="form-control" required>
+            </div>
+            <div class="col-md-6">
+              <label for="apellidos" class="form-label">Apellidos</label>
+              <input type="text" id="apellidos" name="apellidos" class="form-control" required>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="trabajo" class="form-label">Lugar de Trabajo</label>
+            <input type="text" id="trabajo" name="trabajo" class="form-control">
+          </div>
+
+          <div class="mb-3">
+            <label for="direccion" class="form-label">Dirección</label>
+            <input type="text" id="direccion" name="direccion" class="form-control">
+          </div>
+
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label for="telefono" class="form-label">Teléfono</label>
+              <input type="tel" id="telefono" name="telefono" class="form-control">
+            </div>
+            <div class="col-md-6">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" id="email" name="email" class="form-control" required>
+            </div>
+          </div>
+
+          <fieldset class="mb-3">
+            <legend class="form-label d-block">Salva un Gato (€)</legend>
+            <div class="btn-group" role="group" aria-label="Opciones de donación">
+              <input type="radio" class="btn-check" name="donacion" id="don10" value="10">
+              <label class="btn btn-outline-warning" for="don10">10€</label>
+
+              <input type="radio" class="btn-check" name="donacion" id="don25" value="25">
+              <label class="btn btn-outline-warning" for="don25">25€</label>
+
+              <input type="radio" class="btn-check" name="donacion" id="don50" value="50">
+              <label class="btn btn-outline-warning" for="don50">50€</label>
+
+              <input type="radio" class="btn-check" name="donacion" id="don100" value="100">
+              <label class="btn btn-outline-warning" for="don100">100€</label>
+
+              <input type="radio" class="btn-check" name="donacion" id="don250" value="250">
+              <label class="btn btn-outline-warning" for="don250">250€</label>
+            </div>
+          </fieldset>
+
+          <div class="mb-3 d-flex align-items-center gap-2">
+            <label for="donacionPersonalizada" class="form-label mb-0 flex-grow-1">
+              O especifica otra cantidad (1–500€)
+            </label>
+            <input type="number" id="donacionPersonalizada" name="donacionPersonalizada" class="form-control w-25" min="1" max="500" placeholder="€">
+          </div>
+
+          <div class="form-check mb-4">
+            <input class="form-check-input" type="checkbox" id="terminos" required>
+            <label class="form-check-label" for="terminos">
+              Acepto los términos y condiciones
+            </label>
+          </div>
+
+          <div class="d-grid">
+            <button type="submit" class="btn btn-warning text-white fw-bold">
+              Realizar Donación
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+ <footer class="bg-dark text-light pt-5 pb-3">
+  <div class="container">
+    <div class="row">
+      <!-- Organization Info -->
+      <div class="col-md-3 mb-4">
+        <h5 class="text-warning fw-bold mb-3">FUNDACIÓN GATO NARANJA</h5>
+        <p class="mb-2">
+          <i class="bi bi-geo-alt me-2"></i>
+          Calle Conservación, 123 – 28001 Madrid
+        </p>
+        <p class="mb-2">
+          <i class="bi bi-telephone me-2"></i>
+          +34 91 128 45 67
+        </p>
+        <p class="mb-3">
+          <i class="bi bi-envelope me-2"></i>
+          Info@gatonaranja.org
+        </p>
+      </div>
+      
+      <!-- Links Section -->
+      <div class="col-md-3 mb-4">
+        <h6 class="text-warning fw-bold mb-3">ENLACES</h6>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="#fotos" class="text-light text-decoration-none"><i class="bi bi-image me-2"></i>Fotos</a></li>
+          <li class="mb-2"><a href="#características" class="text-light text-decoration-none"><i class="bi bi-list-check me-2"></i>Características</a></li>
+          <li class="mb-2"><a href="#donacion" class="text-light text-decoration-none"><i class="bi bi-heart me-2"></i>Donaciones</a></li>
+          <li class="mb-2"><a href="#" class="text-light text-decoration-none"><i class="bi bi-journal-text me-2"></i>Blog</a></li>
+        </ul>
+      </div>
+      
+      <!-- Projects Section -->
+      <div class="col-md-3 mb-4">
+        <h6 class="text-warning fw-bold mb-3">PROYECTOS</h6>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="#" class="text-light text-decoration-none"><i class="bi bi-link me-2"></i>Referenciación de la unión</a></li>
+          <li class="mb-2"><a href="#" class="text-light text-decoration-none"><i class="bi bi-hand-thumbs-up me-2"></i>Gestos de rescate</a></li>
+          <li class="mb-2"><a href="#" class="text-light text-decoration-none"><i class="bi bi-search me-2"></i>Investigación</a></li>
+          <li class="mb-2"><a href="#" class="text-light text-decoration-none"><i class="bi bi-book me-2"></i>Educación ambiental</a></li>
+        </ul>
+      </div>
+      
+      <!-- Newsletter Section -->
+      <div class="col-md-3 mb-4">
+        <h6 class="text-warning fw-bold mb-3">SÍGUENOS</h6>
+        <div class="d-flex mb-3">
+          <a href="https://www.facebook.com/" class="text-warning me-3 fs-5" aria-label="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="https://x.com/" class="text-warning me-3 fs-5" aria-label="twitter"><i class="bi bi-twitter"></i></a>
+          <a href="https://www.instagram.com/" class="text-warning me-3 fs-5" aria-label="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.youtube.com/" class="text-warning me-3 fs-5" aria-label="youtube"><i class="bi bi-youtube"></i></a>
+        </div>
+        
+        <div class="mb-3">
+          <label for="emailInput" class="form-label small">Tu email</label>
+          <div class="input-group">
+            <input type="email" class="form-control form-control-sm" id="emailInput" placeholder="Tu email">
+            <button class="btn btn-warning btn-sm" type="button"><i class="bi bi-send me-1"></i>Suscribir</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <hr class="my-4 bg-light">
+    
+    <!-- Bottom Section -->
+    <div class="row align-items-center">
+      <div class="col-md-6 mb-2 mb-md-0">
+        <p class="mb-0 small">© 2025 Gato Naranja. Todos los derechos reservados.</p>
+      </div>
+       <div class="col-md-6 text-md-end">
+        <a href="#" class="text-light text-decoration-none small me-3"><i class="bi bi-shield-check me-1"></i>Política de privacidad</a>
+        <a href="#" class="text-light text-decoration-none small me-3"><i class="bi bi-file-text me-1"></i>Términos y condiciones</a>
+        <a href="#" class="text-light text-decoration-none small"><i class="bi bi-cookie me-1"></i>Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+    $(document).ready(function() {
+    $('#btnDonar').click(function() {
+    $('#donacionAvisoModal').modal('hide');
+    
+    setTimeout(function() {
+      $('html, body').animate({
+        scrollTop: $('#donacion').offset().top
+      }, 800); 
+    }, 500);
+    });
+    });
+    </script>
+
+
+</body>
+</html>
