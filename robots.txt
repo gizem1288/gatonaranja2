@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+https://gatonaranja3.netlify.app/sitemap.xml
